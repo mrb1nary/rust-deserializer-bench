@@ -1,0 +1,16 @@
+[package]
+name = "deserialize-bench"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+borsh = { version = "1.5.7", features = ["derive", "std"] }
+bytemuck = { version = "1.23.2", features = ["derive"] }
+rand = "0.9.2"
+
+[dev-dependencies]
+criterion = "0.7.0"
+
+[[bench]]
+name = "deserializeVariables"
+harness = false
