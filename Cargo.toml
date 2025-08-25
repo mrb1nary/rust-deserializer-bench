@@ -12,5 +12,21 @@ rand = "0.9.2"
 criterion = "0.7.0"
 
 [[bench]]
+name = "loop30M"
+harness = false
+
+[[bench]]
+name = "deserialize10kusers"
+harness = false
+
+[[bench]]
+name = "deserializeVariables"
+harness = false
+
+[[bench]]
+name = "solana10kbench"
+harness = false
+
+[[bench]]
 name = "variableSolana"
 harness = false
